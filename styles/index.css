@@ -14,13 +14,15 @@ p {
 .toppage {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* the vioces in my head told em to add this */
     background-color: #26202d;
+    padding: 10px; /* i added the funny paddint so it looks good and doesnt clip into the screen thingy */
 }
 
 .sampletext {
     font-style: italic;
     color: aliceblue;
-    width: 5%;
+    flex-grow: 1; /* i added this thingy cause it just works like that i guess */
     text-align: center;
 }
 
@@ -32,15 +34,13 @@ p {
     margin-right: 1%;
 }
 
-.dropdown{
-    margin-right: 1%;
+.dropdown {
     position: relative;
-    display: block;
     text-align: center;
     font-size: 13px;
     background-color: #17131c;
     padding: 1%;
-    float: right;
+    /* removed float: right; cause why not */
 }
 
 .dropdowncontent {
@@ -225,4 +225,38 @@ p {
     color: #656788;
     font-size: 10px;
     padding: 3%;
+}
+
+@media (max-width: 768px) {
+    .bothboxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sasterrazcontainer, .artworkscontainer {
+        width: 90%;
+        max-width: none;
+        margin: 10px 0;
+    }
+
+    .bigtitle {
+        width: 100%;
+    }
+
+    .sasterrazsubtitle, .artworksubtitle {
+        font-size: 24px;
+    }
+
+    .sasterraztext, .artworktext {
+        font-size: 16px;
+    }
+
+    .topicon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .dropdowncontent {
+        width: 100%;
+    }
 }
