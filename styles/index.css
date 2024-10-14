@@ -1,0 +1,228 @@
+body {
+    font-family: Arial;
+    background-color: #313246;
+    background-image: url(toast.png);
+    background-size: cover;
+    background-attachment: fixed;
+    letter-spacing: 1px;
+}
+
+p {
+    color: aliceblue;
+}
+
+.toppage {
+    display: flex;
+    align-items: center;
+    background-color: #26202d;
+}
+
+.sampletext {
+    font-style: italic;
+    color: aliceblue;
+    width: 5%;
+    text-align: center;
+}
+
+.topicon {
+    object-fit: contain;
+    width: 8%;
+    max-height: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.dropdown{
+    margin-right: 1%;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    background-color: #17131c;
+    padding: 1%;
+    float: right;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #656788;
+    margin-top: 7%;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+.dropdowncontent a{
+    display: block;
+    padding: 10%;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    background-color: #1d1823;
+}
+
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+
+.dropdownoptiontext {
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.dropdowntext{
+    color: aliceblue;
+}
+
+.dropdowncontent a:hover {
+    background-color: #525477;
+}
+
+
+
+
+
+.bigtitlecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigtitle {
+    object-fit: contain;
+    height: 25%;
+    width: 55%;
+}
+
+.introduction {
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.bothboxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.sasterrazcontainer {
+    margin-left: 8%;
+    border-radius: 5%;
+    background-color: #26202d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 2%;
+    box-shadow: #17131c 4px 4px 4px;
+}
+
+.sasterrazcontainer:hover{
+    background-color: #322b39;
+    transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
+    box-shadow: #17131c 6px 6px 6px;
+}
+.sasterraz {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+.sasterrazlink {
+    height: 80%;
+    width: 80%;
+}
+
+.sasterrazsubtitle {
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+    padding: 6%;
+    margin: 0;
+}
+
+.sasterrazspace {
+    display: block;
+}
+
+.sasterraztext{
+    line-height: 140%;
+}
+
+
+
+.artworkscontainer{
+    float:right;
+    margin-right: 8%;
+    border-radius: 5%;
+    background-color: #26202d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 2%;
+    box-shadow: #17131c -4px 4px 4px;
+}
+
+.artworkimage{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.artworklink{
+    width: 80%;
+    height: 80%;
+}
+
+.artworkscontainer:hover{
+    background-color: #322b39;
+    transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
+    box-shadow: #17131c -6px 6px 6px;
+}
+
+.artworkspace{
+    display:block;
+}
+
+.artworksubtitle{
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    padding: 6%;
+    margin: 0;
+}
+
+.artworktext{
+    line-height: 140%;
+}
+
+
+
+
+
+.bottombar{
+    background-color: #26202d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomtext{
+    padding: 3%;
+    float: left;
+    color: #656788;
+    font-size: 10px;
+}
+
+.fancystuff{
+    float: right;
+    color: #656788;
+    font-size: 10px;
+    padding: 3%;
+}
